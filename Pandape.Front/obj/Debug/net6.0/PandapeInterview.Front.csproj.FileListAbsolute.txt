@@ -1,0 +1,92 @@
+C:\Users\canon\Desktop\Pandape.Front\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\canon\Desktop\Pandape.Front\bin\Debug\net6.0\appsettings.json
+C:\Users\canon\Desktop\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.staticwebassets.runtime.json
+C:\Users\canon\Desktop\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.exe
+C:\Users\canon\Desktop\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.deps.json
+C:\Users\canon\Desktop\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.runtimeconfig.json
+C:\Users\canon\Desktop\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.dll
+C:\Users\canon\Desktop\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.pdb
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.csproj.AssemblyReference.cache
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.AssemblyInfoInputs.cache
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.AssemblyInfo.cs
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.csproj.CoreCompileInputs.cache
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.RazorAssemblyInfo.cache
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.RazorAssemblyInfo.cs
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\staticwebassets\msbuild.PandapeInterview.Front.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\staticwebassets\msbuild.build.PandapeInterview.Front.props
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.PandapeInterview.Front.props
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.PandapeInterview.Front.props
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\scopedcss\bundle\PandapeInterview.Front.styles.css
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\scopedcss\projectbundle\PandapeInterview.Front.bundle.scp.css
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.dll
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\refint\PandapeInterview.Front.dll
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.pdb
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.genruntimeconfig.cache
+C:\Users\canon\Desktop\Pandape.Front\obj\Debug\net6.0\ref\PandapeInterview.Front.dll
+C:\Users\canon\Desktop\Pandape\Pandape.Front\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\canon\Desktop\Pandape\Pandape.Front\bin\Debug\net6.0\appsettings.json
+C:\Users\canon\Desktop\Pandape\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.staticwebassets.runtime.json
+C:\Users\canon\Desktop\Pandape\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.exe
+C:\Users\canon\Desktop\Pandape\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.deps.json
+C:\Users\canon\Desktop\Pandape\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.runtimeconfig.json
+C:\Users\canon\Desktop\Pandape\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.dll
+C:\Users\canon\Desktop\Pandape\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.pdb
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.csproj.AssemblyReference.cache
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.AssemblyInfoInputs.cache
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.AssemblyInfo.cs
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.csproj.CoreCompileInputs.cache
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.RazorAssemblyInfo.cache
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.RazorAssemblyInfo.cs
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\staticwebassets\msbuild.PandapeInterview.Front.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\staticwebassets\msbuild.build.PandapeInterview.Front.props
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.PandapeInterview.Front.props
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.PandapeInterview.Front.props
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\scopedcss\bundle\PandapeInterview.Front.styles.css
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\scopedcss\projectbundle\PandapeInterview.Front.bundle.scp.css
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.dll
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\refint\PandapeInterview.Front.dll
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.pdb
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.genruntimeconfig.cache
+C:\Users\canon\Desktop\Pandape\Pandape.Front\obj\Debug\net6.0\ref\PandapeInterview.Front.dll
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\bin\Debug\net6.0\appsettings.json
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.staticwebassets.runtime.json
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.exe
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.deps.json
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.runtimeconfig.json
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.dll
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\bin\Debug\net6.0\PandapeInterview.Front.pdb
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.AssemblyInfoInputs.cache
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.AssemblyInfo.cs
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.RazorAssemblyInfo.cache
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.RazorAssemblyInfo.cs
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\staticwebassets\msbuild.PandapeInterview.Front.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\staticwebassets\msbuild.build.PandapeInterview.Front.props
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.PandapeInterview.Front.props
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.PandapeInterview.Front.props
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\scopedcss\bundle\PandapeInterview.Front.styles.css
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\scopedcss\projectbundle\PandapeInterview.Front.bundle.scp.css
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.dll
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\refint\PandapeInterview.Front.dll
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.pdb
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\PandapeInterview.Front.genruntimeconfig.cache
+C:\Users\Administrador\OneDrive - cun.edu.co\Escritorio\Pandape\Pandape.Front\obj\Debug\net6.0\ref\PandapeInterview.Front.dll

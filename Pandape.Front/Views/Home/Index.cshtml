@@ -1,0 +1,258 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Pandape Front</h1>
+    <p>Hi!</p>
+    <table id="myTable" class="table table-striped table-light">
+        <thead class="table-info">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Birth Date</th>
+                <th>Email</th>
+                <th>Insert Date</th>
+                <th>Modify Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal para actualizar candidato -->
+<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel">Update candidate</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">   
+                <form id="updateForm">
+                    <input type="hidden" id="updateIdCandidate" name="idCandidate">
+                    <div class="form-group">
+                        <label for="updateName">Name</label>
+                        <input type="text" class="form-control" id="updateName" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="updateSurname">Surname</label>
+                        <input type="text" class="form-control" id="updateSurname" name="surname">
+                    </div>
+                    <div class="form-group">
+                        <label for="updateBirthdate">Birthdate</label>
+                        <input type="date" class="form-control" id="updateBirthdate" name="birthdate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateEmail">Email</label>
+                        <input type="email" class="form-control" id="updateEmail" name="email">
+                    </div>
+                    <br />
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="candidateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Candidate Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script>
+     
+     var dataTable;
+     $(document).ready(function () {
+        $.ajax({
+                url: 'https://localhost:7001/api/Candidates/GetAllCandidates',
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    dataTable = $('#myTable').DataTable({
+                        dom: 'Bfrtip',
+                        language: {
+                            url: '//cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json',
+                        },
+                        buttons: [
+                            'copyHtml5',
+                            'excelHtml5',
+                            'csvHtml5',
+                            'pdfHtml5'
+                        ]
+                    });
+                    dataTable.clear().draw();
+                    data.candidates.forEach(function (candidate) { 
+                        var birthdate = new Date(candidate.birthdate).toLocaleDateString()
+                        var insertDate = new Date(candidate.insertDate).toLocaleDateString();
+                        var modifyDate = candidate.modifyDate
+                            ? new Date(candidate.modifyDate).toLocaleDateString()
+                            : '';
+                        var buttons = `<button type="button" class="btn btn-info" data-action="more" data-id="${candidate.idCandidate}">More</button> <button type="button" class="btn btn-danger" data-action="delete" data-id="${candidate.idCandidate}">Delete</button> <button type="button" class="btn btn-primary" data-action="edit" data-id="${candidate.idCandidate}">Edit</button>`;
+                        dataTable.row.add([
+                            candidate.idCandidate,
+                            candidate.name,
+                            candidate.surname,
+                            birthdate, 
+                            candidate.email,
+                            insertDate, 
+                            modifyDate,
+                            buttons
+                        ]).draw(false);
+                    });
+                }
+            });
+
+
+         $('#myTable tbody').on('click', 'button', function () {
+            var action = $(this).data('action');
+            var idCandidate = $(this).data('id');
+            if (action === 'more') {
+                More(idCandidate);
+            } else if (action === 'delete') {
+                Delete(idCandidate);
+            } else if (action === 'edit') {
+                Edit(idCandidate);
+            }
+        });
+
+
+        function More(idCandidate) {
+             $.ajax({
+                url: 'https://localhost:7001/api/Candidates/GetCandidateProfile?IdCandidate=' + idCandidate,
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    if (data.status) {
+                        const formattedBirthdate = new Date(data.candidate.candidate.birthdate).toLocaleDateString('es-ES');
+                        var modalContent = '<h5>Name: ' + data.candidate.candidate.name + '</h5>';
+                        modalContent += '<h5>Surname: ' + data.candidate.candidate.surname + '</h5>';
+                        modalContent += '<h5>Birth Date: ' + formattedBirthdate + '</h5>';
+                        modalContent += '<h5>Email: ' + data.candidate.candidate.email + '</h5>';
+                        modalContent += '<h5>Experiences:</h5>';
+                        modalContent += '<table class="table table-striped"><thead><tr><th>Company</th><th>Job</th><th>Description</th><th>Start date</th><th>End date</th></tr></thead><tbody>';
+                        data.candidate.experience.forEach(function (experience) {
+                            const formattedStartdate = new Date(experience.begindDate).toLocaleDateString('es-ES');
+                            const formattedEnddate = new Date(experience.endDate).toLocaleDateString('es-ES');
+                            modalContent += '<tr><td>' + experience.company + '</td><td>' + experience.job + '</td><td>' + experience.description + '</td><td>'+formattedStartdate+'</td><td>'+formattedEnddate+'</td></tr>';
+                        });
+                        modalContent += '</tbody></table>';
+                        $('#candidateModal .modal-body').html(modalContent);
+                        $('#candidateModal').modal('show');
+                    } else {
+                        alert('Error al obtener los datos del candidato.');
+                    }
+                },
+                error: function () {
+                    alert('Hubo un error al obtener los datos del candidato.');
+                }
+            });
+        }
+
+        function Delete(idCandidate) {
+             $.ajax({
+                url: `https://localhost:7001/api/Candidates/DeleteCandidate?IdCandidate=${idCandidate}`,
+                method: 'DELETE',
+                success: function (data) {
+                    if (data.status === true) {
+                    window.location.reload();
+                        alert(data.message);
+                          
+                    } else {
+                        alert('Error.');
+                    }
+                },
+                error: function () {
+                    alert('Error.');
+                }
+            });
+        }
+
+        function Edit(idCandidate) {
+                $.ajax({
+                url: 'https://localhost:7001/api/Candidates/GetCandidateById?IdCandidate=' + idCandidate,
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    if (data.status && data.candidate) {
+                        var candidate = data.candidate;
+                        OpenUpdateModal(candidate.idCandidate, candidate.name, candidate.surname, candidate.birthdate, candidate.email);
+                    } else {
+                        alert('No se pudo cargar el candidato.');
+                    }
+                },
+                error: function () {
+                    alert('Hubo un error al cargar el candidato.');
+                }
+            });
+        }
+
+        function OpenUpdateModal(idCandidate, name, surname, birthdate, email) {
+            const formattedBirthdate = new Date(birthdate).toLocaleDateString('es-ES');
+            $('#updateIdCandidate').val(idCandidate);
+            $('#updateName').val(name);
+            $('#updateSurname').val(surname);
+            $('#updateBirthdate').val(formattedBirthdate);
+            $('#updateEmail').val(email);
+            $('#updateModal').modal('show');
+        }
+
+        $('#updateForm').submit(function (e) {
+             e.preventDefault(); 
+                var idCandidate = $('#updateIdCandidate').val();
+                var name = $('#updateName').val();
+                var surname = $('#updateSurname').val();
+                var birthdate = $('#updateBirthdate').val();
+                var email = $('#updateEmail').val();
+                UpdateCandidate(idCandidate, name, surname, birthdate, email);
+        });
+
+       function UpdateCandidate(idCandidate, name, surname, birthdate, email) {
+        var candidateData = {
+            idCandidate: idCandidate,
+            name: name,
+            surname: surname,
+            birthdate: birthdate,
+            email: email
+        };
+        $.ajax({
+            url: 'https://localhost:7001/api/Candidates/UpdateCandidate',
+            method: 'PUT',
+            dataType: 'json',
+            contentType: 'application/json',
+            data: JSON.stringify(candidateData),
+            success: function (data) {
+                if (data.status) {
+                    alert('Candidato actualizado exitosamente.');
+                    $('#updateModal').modal('hide');
+                    window.location.reload();
+                } else {
+                    alert('Error al actualizar el candidato.');
+                }
+            },
+            error: function () {
+                alert('Hubo un error al realizar la actualización.');
+            }
+        });
+      }
+
+    });
+     </script>
+
+}
